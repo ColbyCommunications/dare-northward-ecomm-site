@@ -25,13 +25,7 @@
                     "name": "Brandon Waltz",
                     "email": "brandon.waltz@colby.edu"
                 }
-            ],
-            "description": "Premium ACF Pro plugin",
-            "homepage": "https://github.com/colbycommunications/advanced-custom-fields-pro",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2022-08-25T14:30:08+00:00"
+            ]
         },
         {
             "name": "colbycommunications/colby-dare-northward-ecomm-theme",
@@ -61,33 +55,6 @@
                 "wordpress"
             ],
             "time": "2023-01-26T16:42:59+00:00"
-        },
-        {
-            "name": "colbycommunications/colby-ticket",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ColbyCommunications/colby-ticket.git",
-                "reference": "48a50e77d781470f2ba01426f64dec1ce6e1d53b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/colby-ticket/colbycommunications-colby-ticket-48a50e77d781470f2ba01426f64dec1ce6e1d53b-zip-2804bc.zip",
-                "reference": "48a50e77d781470f2ba01426f64dec1ce6e1d53b"
-            },
-            "type": "wordpress-plugin",
-            "authors": [
-                {
-                    "name": "Brandon Waltz",
-                    "email": "brandon.waltz@colby.edu"
-                }
-            ],
-            "description": "The ColbyTicket plugin for cloud sites",
-            "homepage": "https://github.com/colbycommunications/colby-ticket",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2022-07-12T13:03:47+00:00"
         },
         {
             "name": "composer/ca-bundle",
