@@ -19,6 +19,7 @@
         "wpackagist-plugin/qty-increment-buttons-for-woocommerce": "2.7.5",
         "wp-cli/wp-cli-bundle": "^2.4",
         "psy/psysh": "^0.10.4",
+        "colbycommunications/advanced-custom-fields-pro": "^5.11.4",
         "vlucas/phpdotenv": "^5.4",
         "colbycommunications/colby-dare-northward-ecomm-theme": "dev-master"
     },
