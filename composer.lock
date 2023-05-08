@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d88888744a284bef4f0df0cb4d693554",
+    "content-hash": "9fea2d2e5de3f042cfd07001d16082e6",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
-            "version": "5.12.3",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/advanced-custom-fields-pro.git",
-                "reference": "74d33a020a76ec04d846b4eed07777de70b92782"
+                "reference": "b0d13e0e6780463b3f72700e77b6a854c56fab77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-74d33a020a76ec04d846b4eed07777de70b92782-zip-1d49fe.zip",
-                "reference": "74d33a020a76ec04d846b4eed07777de70b92782"
+                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-b0d13e0e6780463b3f72700e77b6a854c56fab77-zip-37333d.zip",
+                "reference": "b0d13e0e6780463b3f72700e77b6a854c56fab77"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -31,7 +31,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-08-25T14:30:08+00:00"
+            "time": "2022-10-19T16:09:28+00:00"
         },
         {
             "name": "colbycommunications/colby-dare-northward-ecomm-theme",
