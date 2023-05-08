@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1edd66da2c7ef150902b1d5d0c88bb3",
+    "content-hash": "d88888744a284bef4f0df0cb4d693554",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -5243,6 +5243,24 @@
             "homepage": "https://wordpress.org/plugins/header-footer/"
         },
         {
+            "name": "wpackagist-plugin/qty-increment-buttons-for-woocommerce",
+            "version": "2.7.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/qty-increment-buttons-for-woocommerce/",
+                "reference": "tags/2.7.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/qty-increment-buttons-for-woocommerce.2.7.5.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/qty-increment-buttons-for-woocommerce/"
+        },
+        {
             "name": "wpackagist-plugin/query-monitor",
             "version": "3.12.2",
             "source": {
@@ -5277,6 +5295,60 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/siteimprove/"
+        },
+        {
+            "name": "wpackagist-plugin/slider-hero",
+            "version": "8.5.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/slider-hero/",
+                "reference": "tags/8.5.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/slider-hero.8.5.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/slider-hero/"
+        },
+        {
+            "name": "wpackagist-plugin/woo-variation-swatches",
+            "version": "2.0.20",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woo-variation-swatches/",
+                "reference": "tags/2.0.20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woo-variation-swatches.2.0.20.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woo-variation-swatches/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "7.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/7.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.7.6.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
