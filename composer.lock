@@ -39,7 +39,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-dare-northward-ecomm-theme",
-                "reference": "b78a2b36884c38405c9211b54902ac8e2b38e876"
+                "reference": "36525719b0d52f004dd7080891a0b7acca08eacd"
             },
             "require": {
                 "php": ">=7.1"
@@ -59,7 +59,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2023-05-08T13:41:21+00:00"
+            "time": "2023-05-23T13:19:08+00:00"
         },
         {
             "name": "composer/ca-bundle",
