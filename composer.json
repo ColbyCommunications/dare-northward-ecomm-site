@@ -21,7 +21,8 @@
         "psy/psysh": "^0.10.4",
         "colbycommunications/advanced-custom-fields-pro": "6.0.3",
         "vlucas/phpdotenv": "^5.4",
-        "colbycommunications/colby-dare-northward-ecomm-theme": "dev-development"
+        "colbycommunications/colby-dare-northward-ecomm-theme": "dev-development",
+        "colbycommunications/donation-for-woocommerce": "3.4.6.2"
     },
     "authors": [
         {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9fea2d2e5de3f042cfd07001d16082e6",
+    "content-hash": "57884d22f077e16f1fb761e71d763c7e",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -60,6 +60,33 @@
                 "wordpress"
             ],
             "time": "2023-05-23T13:19:08+00:00"
+        },
+        {
+            "name": "colbycommunications/donation-for-woocommerce",
+            "version": "3.4.6.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ColbyCommunications/donation-for-woocommerce.git",
+                "reference": "98fbce987449e896b2097d725eaaf6d49df32866"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.colby.edu/dist/colbycommunications/donation-for-woocommerce/colbycommunications-donation-for-woocommerce-98fbce987449e896b2097d725eaaf6d49df32866-zip-cc4cc9.zip",
+                "reference": "98fbce987449e896b2097d725eaaf6d49df32866"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Brandon Waltz",
+                    "email": "brandon.waltz@colby.edu"
+                }
+            ],
+            "description": "Premium Donation for Woocommerce plugin",
+            "homepage": "https://github.com/colbycommunications/donation-for-woocommerce",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2023-06-09T13:46:31+00:00"
         },
         {
             "name": "composer/ca-bundle",
