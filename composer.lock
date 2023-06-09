@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfe2186a5c93674f6e0a522923a72d2f",
+    "content-hash": "c01f30a0b1dc32a638ef3c2e7f393ea9",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -5205,6 +5205,24 @@
             "homepage": "https://wordpress.org/plugins/cloudflare/"
         },
         {
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "5.7.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/5.7.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.7.7.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
             "name": "wpackagist-plugin/duplicate-post",
             "version": "4.5",
             "source": {
@@ -5241,6 +5259,24 @@
             "homepage": "https://wordpress.org/plugins/header-footer/"
         },
         {
+            "name": "wpackagist-plugin/qty-increment-buttons-for-woocommerce",
+            "version": "2.7.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/qty-increment-buttons-for-woocommerce/",
+                "reference": "tags/2.7.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/qty-increment-buttons-for-woocommerce.2.7.5.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/qty-increment-buttons-for-woocommerce/"
+        },
+        {
             "name": "wpackagist-plugin/query-monitor",
             "version": "3.11.1",
             "source": {
@@ -5275,6 +5311,78 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/siteimprove/"
+        },
+        {
+            "name": "wpackagist-plugin/slider-hero",
+            "version": "8.5.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/slider-hero/",
+                "reference": "tags/8.5.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/slider-hero.8.5.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/slider-hero/"
+        },
+        {
+            "name": "wpackagist-plugin/woo-variation-swatches",
+            "version": "2.0.21",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woo-variation-swatches/",
+                "reference": "tags/2.0.21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woo-variation-swatches.2.0.21.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woo-variation-swatches/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "7.7.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/7.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.7.7.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-payments",
+            "version": "6.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-payments/",
+                "reference": "tags/6.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-payments.6.0.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-payments/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
