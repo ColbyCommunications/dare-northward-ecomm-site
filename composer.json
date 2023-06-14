@@ -15,6 +15,7 @@
         "wpackagist-plugin/query-monitor": "3.12.2",
         "wpackagist-plugin/woocommerce": "7.6.1",
         "wpackagist-plugin/woo-variation-swatches": "2.0.20",
+        "wpackagist-plugin/woocommerce-payments": "^6.0.0",
         "wpackagist-plugin/slider-hero": "8.5.0",
         "wpackagist-plugin/qty-increment-buttons-for-woocommerce": "2.7.5",
         "wp-cli/wp-cli-bundle": "^2.4",
@@ -22,7 +23,8 @@
         "colbycommunications/advanced-custom-fields-pro": "6.0.3",
         "vlucas/phpdotenv": "^5.4",
         "colbycommunications/colby-dare-northward-ecomm-theme": "dev-development",
-        "colbycommunications/donation-for-woocommerce": "3.4.6.2"
+        "colbycommunications/donation-for-woocommerce": "3.4.6.2",
+        "wpackagist-plugin/contact-form-7": "^5.7.6"
     },
     "authors": [
         {
