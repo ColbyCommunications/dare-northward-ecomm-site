@@ -137,11 +137,15 @@ applications:
     hooks:
       # The build hook is run after any build flavor.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#build-hook
-      build: !include 'hooks.build.yaml'
+      build: !include
+        type: yaml
+        path: 'hooks.build.yaml'
         
       # The deploy hook is run after the app container has been started, but before it has started accepting requests.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#deploy-hook
-      deploy: !include 'hooks.deploy.yaml'
+      deploy: !include
+        type: yaml
+        path: 'hooks.deploy.yaml'
         
 
       # The post_deploy hook is run after the app container has been started and after it has started accepting requests.
