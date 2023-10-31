@@ -51,7 +51,7 @@ applications:
       #  socket_family: unix
       # Each key in locations is a path on your site with a leading /.
       # More information: https://docs.upsun.com/create-apps/app-reference.html#locations
-      locations: !include /app/project/platform/web.locations.yaml
+      locations: !include /project/platform/web.locations.yaml
 
     # Alternate copies of the application to run as background processes.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#workers
@@ -67,7 +67,7 @@ applications:
 
     # Variables to control the environment. More information: https://docs.upsun.com/create-apps/app-reference.html#variables
     variables:
-      env: !include project/platform/variables.env.yaml
+      env: !include /project/platform/variables.env.yaml
       php:
         upload_max_filesize: 128M
         memory_limit: 256M
@@ -99,13 +99,13 @@ applications:
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#build-hook
       build: !include
         type: string
-        path: /app/project/platform/hooks.build.yaml
+        path: /project/platform/hooks.build.yaml
         
       # The deploy hook is run after the app container has been started, but before it has started accepting requests.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#deploy-hook
       deploy: !include
         type: string
-        path: /app/project/platform/hooks.deploy.yaml
+        path: /project/platform/hooks.deploy.yaml
         
 
       # The post_deploy hook is run after the app container has been started and after it has started accepting requests.
