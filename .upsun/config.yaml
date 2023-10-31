@@ -128,7 +128,6 @@ applications:
       nodejs:
         n: "*"
         npx: "*"
-        sharp: "*"
       php:
         composer/composer: "^2"
 
