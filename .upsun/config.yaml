@@ -51,7 +51,33 @@ applications:
       #  socket_family: unix
       # Each key in locations is a path on your site with a leading /.
       # More information: https://docs.upsun.com/create-apps/app-reference.html#locations
-      locations: !include 'web.locations.yaml'
+      locations:
+        "/":
+          root: "web"
+          passthru: "/index.php"
+          index:
+            - "index.php"
+          expires: 3600s
+          scripts: true
+          allow: true
+          rules: !include 'web.locations.root.rules.yaml'
+        "/wp-admin":
+          root: 'web/wp/wp-admin'
+          allow: true
+          scripts: true
+          index:
+            - 'index.php'
+        "/wp-includes":
+          root: 'web/wp/wp-includes'
+          allow: true
+          scripts: true
+        "/wp-content":
+          allow: false
+          scripts: false
+          rules:
+            '(?<!lock)\.(?i:jpe?g|gif|png|svg|bmp|ico|css|js(?:on)?|eot|ttf|woff|woff2|pdf|docx?|xlsx?|pp[st]x?|psd|odt|key|mp[2-5g]|m4[av]|og[gv]|wav|mov|wm[av]|avi|3g[p2])$':
+              allow: true
+              expires: 1w
 
     # Alternate copies of the application to run as background processes.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#workers
@@ -67,7 +93,7 @@ applications:
 
     # Variables to control the environment. More information: https://docs.upsun.com/create-apps/app-reference.html#variables
     variables:
-      env: !include ../project/platform/variables.env.yaml
+      env: !include 'variables.env.yaml'
       php:
         upload_max_filesize: 128M
         memory_limit: 256M
@@ -97,15 +123,11 @@ applications:
     hooks:
       # The build hook is run after any build flavor.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#build-hook
-      build: !include
-        type: string
-        path: ../project/platform/hooks.build.yaml
+      build: !include 'hooks.build.yaml'
         
       # The deploy hook is run after the app container has been started, but before it has started accepting requests.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#deploy-hook
-      deploy: !include
-        type: string
-        path: ../project/platform/hooks.deploy.yaml
+      deploy: !include 'hooks.deploy.yaml'
         
 
       # The post_deploy hook is run after the app container has been started and after it has started accepting requests.
@@ -129,10 +151,8 @@ applications:
 # More information: https://docs.upsun.com/add-services.html
 # Full list of available services: https://docs.upsun.com/add-services.html#available-services
 services:
-  mariadb:
-    type: mariadb:10.6 # All available versions are: 10.6, 10.5, 10.4, 10.3
-
-  
+  mysqldb:
+    type: mysql:10.2
 
 # The routes of the project.
 #
