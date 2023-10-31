@@ -52,7 +52,6 @@ if ( false !== $strRelationships = getenv( 'PLATFORM_RELATIONSHIPS' ) ) {
 	}
 
 	$relationships = json_decode( base64_decode( getenv( 'PLATFORM_RELATIONSHIPS' ) ), true );
-	die( var_dump( $relationships ) );
 
 	// We are using the first relationship called "database" found in your
 	// relationships. Note that you can call this relationship as you wish
