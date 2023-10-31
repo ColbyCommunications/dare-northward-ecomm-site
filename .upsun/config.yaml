@@ -143,9 +143,12 @@ applications:
         
       # The deploy hook is run after the app container has been started, but before it has started accepting requests.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#deploy-hook
-      deploy: !include
-        type: yaml
-        path: 'hooks.deploy.yaml'
+      deploy: |
+        if [ "$PLATFORM_BRANCH" != master ] && [ ! -z ${MULTISITE+x} ]; then
+          php scripts/update-multisite-db.php
+        fi
+        
+        ./scripts/cleanup-dev-db.sh
         
 
       # The post_deploy hook is run after the app container has been started and after it has started accepting requests.
