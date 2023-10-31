@@ -51,7 +51,9 @@ applications:
       #  socket_family: unix
       # Each key in locations is a path on your site with a leading /.
       # More information: https://docs.upsun.com/create-apps/app-reference.html#locations
-      locations: !include ../project/platform/web.locations.yaml
+      locations: !include
+        type: yaml
+        path: '../project/platform/web.locations.yaml'
 
     # Alternate copies of the application to run as background processes.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#workers
