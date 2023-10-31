@@ -137,9 +137,25 @@ applications:
     hooks:
       # The build hook is run after any build flavor.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#build-hook
-      build: !include
-        type: yaml
-        path: 'hooks.build.yaml'
+      build: |
+        set -e
+        ./scripts/setup-mu-plugins.sh
+        ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php /app/web/wp-content/mu-plugins/wp-seo.php
+
+        unset NPM_CONFIG_PREFIX
+        curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | dash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        nvm current
+        nvm install 16.13.1
+        unset NPM_CONFIG_PREFIX
+        nvm use 16.13.1
+
+        # run npm install in all colby dependencies
+        ./scripts/dependencies-run-install-build.sh
+
+        # generate .env
+        node ./scripts/platform_generate-env.js
         
       # The deploy hook is run after the app container has been started, but before it has started accepting requests.
       # More information: https://docs.upsun.com/create-apps/hooks/hooks-comparison.html#deploy-hook
@@ -147,7 +163,7 @@ applications:
         if [ "$PLATFORM_BRANCH" != master ] && [ ! -z ${MULTISITE+x} ]; then
           php scripts/update-multisite-db.php
         fi
-        
+
         ./scripts/cleanup-dev-db.sh
         
 
