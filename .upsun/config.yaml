@@ -53,7 +53,7 @@ applications:
       # More information: https://docs.upsun.com/create-apps/app-reference.html#locations
       locations: !include
         type: yaml
-        path: '../project/platform/web.locations.yaml'
+        path: 'web.locations.yaml'
 
     # Alternate copies of the application to run as background processes.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#workers
