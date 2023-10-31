@@ -19,7 +19,7 @@ applications:
     # side is in the form `<service name>:<endpoint name>`.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#relationships
     relationships:
-      mysql: "mysql:mysql"
+      mariadb: "mariadb:mysql"
       
 
     # Mounts define directories that are writable after the build is complete.
@@ -78,8 +78,6 @@ applications:
             '(?<!lock)\.(?i:jpe?g|gif|png|svg|bmp|ico|css|js(?:on)?|eot|ttf|woff|woff2|pdf|docx?|xlsx?|pp[st]x?|psd|odt|key|mp[2-5g]|m4[av]|og[gv]|wav|mov|wm[av]|avi|3g[p2])$':
               allow: true
               expires: 1w
-          
-        
 
     # Alternate copies of the application to run as background processes.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#workers
@@ -99,7 +97,6 @@ applications:
       php:
         upload_max_filesize: 128M
         memory_limit: 256M
-        
 
     # Outbound firewall rules for the application. More information: https://docs.upsun.com/create-apps/app-reference.html#firewall
     # firewall:
@@ -154,10 +151,8 @@ applications:
 # More information: https://docs.upsun.com/add-services.html
 # Full list of available services: https://docs.upsun.com/add-services.html#available-services
 services:
-  mysql:
-    type: mysql:10.6 # All available versions are: 10.6, 10.5, 10.4, 10.3
-
-  
+  mysqldb:
+    type: mysql:10.2
 
 # The routes of the project.
 #
