@@ -60,7 +60,19 @@ applications:
           expires: 3600s
           scripts: true
           allow: true
-          rules: !include 'web.locations.root.rules.yaml'
+          rules:
+            '^/robots\.txt$':
+              allow: true
+            '^/sitemap\.xml$':
+              allow: true
+            '^/(?!wp/)([_0-9a-zA-Z-]+/)?wp-login.php$':
+              allow: true
+              scripts: true
+              passthru: '/wp/wp-login.php'
+            '^/(?!wp/)([_0-9a-zA-Z-]+/)?(?<adminrewrite>wp-(admin|includes).*)':
+              allow: true
+              scripts: true
+              passthru: '/wp/$adminrewrite'
         "/wp-admin":
           root: 'web/wp/wp-admin'
           allow: true
@@ -93,7 +105,8 @@ applications:
 
     # Variables to control the environment. More information: https://docs.upsun.com/create-apps/app-reference.html#variables
     variables:
-      env: !include 'variables.env.yaml'
+      env:
+        PRIMARY_DOMAIN: site.colby.edu
       php:
         upload_max_filesize: 128M
         memory_limit: 256M
