@@ -19,7 +19,7 @@ applications:
     # side is in the form `<service name>:<endpoint name>`.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#relationships
     relationships:
-      mysql: "mysql:mysql"
+      database: "mysqldb:mysql"
       
 
     # Mounts define directories that are writable after the build is complete.
@@ -187,7 +187,7 @@ applications:
 # More information: https://docs.upsun.com/add-services.html
 # Full list of available services: https://docs.upsun.com/add-services.html#available-services
 services:
-  database:
+  mysqldb:
     type: mysql:10.6 # All available versions are: 10.6, 10.5, 10.4, 10.3
 
   
