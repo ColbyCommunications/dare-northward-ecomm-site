@@ -183,7 +183,7 @@ applications:
 # The services of the project.
 #
 # Each service listed will be deployed
-# to power your Upsun project.
+# to power your Upsun project..
 # More information: https://docs.upsun.com/add-services.html
 # Full list of available services: https://docs.upsun.com/add-services.html#available-services
 services:
