@@ -25,9 +25,15 @@ applications:
     # Mounts define directories that are writable after the build is complete.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#mounts
     mounts:
-      "/web/wp-content/uploads": "shared:files/uploads"
-      "/web/wp-content/cache": "shared:files/cache"
-      "/web/wp-content/okta": "shared:files/plugins/okta"
+      '/web/wp-content/uploads':
+        source: local
+        source_path: uploads
+      '/web/wp-content/cache':
+        source: local
+        source_path: cache
+      '/web/wp-content/okta':
+        source: local
+        source_path: okta
 
     # The web key configures the web server running in front of your app.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#web
