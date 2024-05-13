@@ -39,7 +39,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-dare-northward-ecomm-theme",
-                "reference": "c97309e362c7ffd4db6f411d8defb539ae4b8ec6"
+                "reference": "39fdebe218dc2e39e1063a878f51dd9bce287008"
             },
             "require": {
                 "php": ">=7.1"
@@ -59,7 +59,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2024-03-13T17:42:31+00:00"
+            "time": "2024-05-13T20:32:29+00:00"
         },
         {
             "name": "colbycommunications/donation-for-woocommerce",
