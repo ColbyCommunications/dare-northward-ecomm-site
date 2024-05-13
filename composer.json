@@ -24,7 +24,8 @@
         "vlucas/phpdotenv": "^5.4",
         "colbycommunications/colby-dare-northward-ecomm-theme": "dev-development",
         "colbycommunications/donation-for-woocommerce": "3.4.6.2",
-        "wpackagist-plugin/contact-form-7": "^5.7.6"
+        "wpackagist-plugin/contact-form-7": "^5.7.6",
+        "wpackagist-plugin/redirection": "5.4.2"
     },
     "authors": [
         {
