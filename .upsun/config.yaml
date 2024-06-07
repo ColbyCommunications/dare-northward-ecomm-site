@@ -142,7 +142,6 @@ applications:
       build: |
         set -e
         ./scripts/setup-mu-plugins.sh
-        ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php /app/web/wp-content/mu-plugins/wp-seo.php
 
         unset NPM_CONFIG_PREFIX
         curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | dash
