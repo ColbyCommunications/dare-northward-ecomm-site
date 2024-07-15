@@ -2,7 +2,14 @@
     "customizations": {
         "vscode": {
             "settings": {},
-            "extensions": ["octref.vetur"]
+            "extensions": [
+                "octref.vetur", 
+                "github.copilot", 
+                "github.copilot-chat", 
+                "browserstackcom.browserstack-vscode", 
+                "esbenp.prettier-vscode",
+                "GitHub.github-vscode-theme"
+            ]
         }
     }
 }
