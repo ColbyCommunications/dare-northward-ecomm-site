@@ -9,7 +9,9 @@
                 "browserstackcom.browserstack-vscode",
                 "esbenp.prettier-vscode",
                 "GitHub.github-vscode-theme",
-                "whatwedo.twig"
+                "whatwedo.twig",
+                "Syler.sass-indented",
+                "jock.svg"
             ]
         }
     }
