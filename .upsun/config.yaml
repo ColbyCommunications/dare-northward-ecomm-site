@@ -203,6 +203,29 @@ routes:
   "https://{default}/":
     type: upstream
     upstream: "dare-northward-ecomm-site:http"
+     redirects:
+      expires: 1d
+      paths:
+        '^/product/echo-hat/?$':
+          to: 'https://bookstore.colby.edu/dare-northward-echo-hat'
+          regexp: true
+          code: 301
+        '^/product/ybloc-crewneck/?$':
+          to: 'https://bookstore.colby.edu/dare-northward-ybloc-crewneck-sweatshirt'
+          regexp: true
+          code: 301
+        '^/product/greene-necktie/?$':
+          to: 'https://bookstore.colby.edu/dare-northward-greene-necktie'
+          regexp: true
+          code: 301
+        '^/product/mens-script-oxford/?$':
+          to: 'https://bookstore.colby.edu/dare-northward-mens-script-oxford'
+          regexp: true
+          code: 301
+        '^/product/womens-script-oxford/?$':
+          to: 'https://bookstore.colby.edu/dare-northward-womens-script-oxford'
+          regexp: true
+          code: 301
   # A basic redirect definition
   # More information: https://docs.upsun.com/define-routes.html#basic-redirect-definition
   "https://www.{default}":
