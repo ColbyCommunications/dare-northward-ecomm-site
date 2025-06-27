@@ -203,7 +203,7 @@ routes:
   "https://{default}/":
     type: upstream
     upstream: "dare-northward-ecomm-site:http"
-     redirects:
+    redirects:
       expires: 1d
       paths:
         '^/product/echo-hat/?$':
